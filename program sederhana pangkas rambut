@@ -1,0 +1,78 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// Struktur untuk menyimpan informasi pelanggan
+struct Customer {
+    string name;
+    char harga;
+};
+
+int main() {
+    Customer customer;
+
+    // Meminta pengguna untuk memasukkan informasi
+    cout << "=== Program Pangkas Rambut ===" << endl;
+    cout << "Masukkan Nama Anda: ";
+    getline(cin, customer.name);
+    cout << "=== Harga Pangkas Rambut ===" << endl;
+    cout << "1. Anak-anak Rp.50.000" << endl;
+    cout << "2. Dewasa Rp.100.000" << endl;
+    
+    cout << "Masukkan nomor pilihan (1/2): ";
+    int choice;
+    cin >> choice;
+    switch (choice) {
+        case 1:
+            cout << "Halo, " << customer.name << "! Anda Memilih Anak-anak Dengan Harga Rp.50.000." << endl;
+            // Tambahkan aksi khusus untuk pangkas rambut pria di sini
+        case 2:
+            cout << "Halo, " << customer.name << "! Anda memilih Dewasa Dengan Harga Rp.100.000." << endl;
+            // Tambahkan aksi khusus untuk pangkas rambut wanita di sini
+
+    // Menampilkan menu jenis pangkas rambut
+    cout << "=== Menu Model Rambut ===" << endl;
+    cout << "1. Mullet Haircut" << endl;
+    cout << "2. Buzz cut" << endl;
+    cout << "3. Botak Gundul" << endl;
+    cout << "4. Rapihin Aja" << endl;
+    cout << "5. Cempek Haircut" << endl;
+    cout << "6. Brokoli Haircut" << endl;
+    
+    // Meminta pengguna untuk memilih jenis pangkas rambut
+    cout << "Masukkan nomor pilihan (1-6): ";
+    int choice;
+    cin >> choice;
+    }
+
+    // Menentukan jenis pangkas rambut berdasarkan pilihan pengguna
+    switch (choice) {
+        case 1:
+            cout << "Halo, " << customer.name << "! Anda memilih Pangkas Gaya Rambut Model Mullet Haircut." << endl;
+            break;
+            // Tambahkan aksi khusus untuk pangkas rambut pria di sini
+        case 2:
+            cout << "Halo, " << customer.name << "! Anda memilih Pangkas Gaya Rambut Model Buzz cut." << endl;
+            break;
+            // Tambahkan aksi khusus untuk pangkas rambut wanita di sini
+        case 3:
+            cout << "Halo, " << customer.name << "! Anda memilih Pangkas Gaya Rambut Model Botak Gundul." << endl;
+            break;
+            // Tambahkan aksi khusus untuk pangkas rambut anak-anak di sini
+        case 4:
+            cout << "Halo, " << customer.name << "! Anda memilih Pangkas Gaya Rambut Model Rapihin Aja." << endl;
+            break;
+        case 5:
+            cout << "Halo, " << customer.name << "! Anda memilih Pangkas Gaya Rambut Model Cepmek Haircut." << endl;
+            break;
+        case 6:
+            cout << "Halo, " << customer.name << "! Anda memilih Pangkas Gaya Rambut Model Brooli Haircut." << endl;
+            break;
+        default:
+            cout << "Pilihan tidak valid. Silakan pilih nomor yang benar (1-6)." << endl;
+            break;
+    }
+    
+    return 0;
+}
